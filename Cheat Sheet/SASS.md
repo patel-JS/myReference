@@ -1,60 +1,63 @@
-# SASS : CSS PRe-Processor
+# SASS : CSS Pre-Processor
 
-## node.js Setup
+>## node.js Setup
 
 ### Installation for node.js
     npm init  
     npm install node-sass --save-dev
 
-## Folder Structure
-   + SCSS 
-     + CSS
-        - style.css
-     + SASS
-        - main.scss
+### Folder Structure
+    + SCSS 
+        + CSS
+            - style.css
+        + SASS
+            - main.scss
 
-## Link CSS in index.html
+### Link CSS in index.html
     <link rel="stylesheet" href="CSS/style.css">
 
-## package.json > Add following script
+### package.json > Add following script
     "scripts": {
     "compile:sass" : "node-sass SASS/main.scss CSS/style.css -w" 
-  },
+    },
 
 
-## To compiling SCSS, run following commands
+### To compiling SCSS, run following commands
     npm run compile:sass
 
 ---
 
-# VsCode Setup :
-### VsCode Extension : Live SASS Compiler
-## Link CSS in index.html
+>## VsCode Setup :
+
+### Required VsCode Extension : <b>Live SASS Compiler</b>
+
+### Link CSS in index.html
     <link rel="stylesheet" href="SCSS/main.css">
 
 ---
 
+# SASS
 
-1. Operator  ( 5rem + 3rem)  
+>1. Operator 
     
-    p{
-        font-size: 1rem + 0.2rem;
-    }
+        p{
+            font-size: 1rem + 0.2rem;
+        }
    
 
-2. Variables ($col-light : #38Bfg9 / background-color : $col-light)
+>2. Variables 
     
-    $primary-col : #e63946;
-    $secondry-col : #457b9d;
-    $bg-col : #f1faee;
-    $text-col : #1d3557;
+        $primary-col : #e63946;
+        $secondry-col : #457b9d;
+        $bg-col : #f1faee;
+        $text-col : #1d3557;
 
-3. Nexting (header &:head &:p)
+>3. Nexting
 
-    .app-flex{
-        margin: 0 auto;
-        width: 30vw;
-        height: 25vh;
+        .app-flex{  
+            margin: 0 auto;  
+            width: 30vw;  
+            height: 25vh;  
         
             .head-text{
                 color: $bg-col;
@@ -66,23 +69,24 @@
                 }
     }
 
-4. Mixin (@mixin div-flex  /  @include div-flex)
+>4. Mixin 
 
-    @mixin flex {display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;}
+        @mixin flex {display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;}
 
-5. Parameter (@mixin div-flex($val)  /  @include div-flex(3rem))
+>5. Parameter 
 
-    @mixin border($size, $col, $rad) {
-        border: $size solid $col;
-        border-radius: $rad;
-    }
+        @mixin border($size, $col, $rad) {
+            border: $size solid $col;
+            border-radius: $rad;
+        }
 
-6. Partials ( _mixin.scss, _var.scss / @import "mixin", @import "var")
+>6. Partials 
 
     @import 'var';    || "./SCSS/_var.scss";
     @import 'mixin';  || "./SCSS/_mixin.scss";
 
 
+---
