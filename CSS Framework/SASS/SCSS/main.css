@@ -1,0 +1,46 @@
+@charset "UTF-8";
+.app-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid blue;
+  border-radius: 10px;
+  margin: 0 auto;
+  background-color: #457b9d;
+  width: 30vw;
+  height: 25vh;
+}
+
+.app-flex .head-text {
+  color: #f1faee;
+}
+
+.app-flex .head-text::before {
+  content: "👋";
+  position: relative;
+}
+
+.app-flex .head-text:hover {
+  color: #e63946;
+  cursor: pointer;
+}
+
+.app-flex p {
+  color: #1d3557;
+  font-size: 1.2rem;
+}
+
+body {
+  background-color: #f1faee;
+}
+/*# sourceMappingURL=main.css.map */

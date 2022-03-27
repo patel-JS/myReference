@@ -1,0 +1,39 @@
+
+@import 'var';
+@import 'mixin';
+
+.app-flex{
+    @include flex;
+    @include border(1px, blue, 10px);
+    margin: 0 auto;
+    background-color: $secondry-col;
+    width: 30vw;
+    height: 25vh;
+    
+    .head-text{
+        color: $bg-col;
+
+        &::before{
+            content: "👋";
+            position: relative;
+
+        }
+
+        &:hover{
+            color: $primary-col;
+            cursor: pointer;
+        }
+    }
+
+    p{
+        color: $text-col;
+        font-size: 1rem + .2rem;
+    }
+}
+
+body{
+    background-color: $bg-col;
+}
+
+
+

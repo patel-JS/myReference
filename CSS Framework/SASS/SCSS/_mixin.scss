@@ -1,0 +1,11 @@
+
+@mixin flex {display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;}
+
+
+@mixin border($size, $col, $rad) {
+    border: $size solid $col;
+    border-radius: $rad;
+}

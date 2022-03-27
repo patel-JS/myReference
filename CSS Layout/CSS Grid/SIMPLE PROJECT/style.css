@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    font-size: 62.5%;
+}
+
+
+.container{
+    height: 70vh;
+    border: 1px solid lightcoral;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(auto-fit, 1fr)); */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    grid-template-rows: 64px 1fr 64px;
+    grid-template-areas: 
+    "header header"
+    "main-content" "sidebar"
+    "footer footer";
+
+}
+
+.header, .footer{
+    grid-column: span 2;
+}
+
+.container > * {
+    border: 1px solid blue;
+    font-size: 2rem;
+}
