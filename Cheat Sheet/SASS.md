@@ -90,3 +90,13 @@
 
 
 ---
+
+## To install for React
+
+    npm install --save-dev node-sass
+
+    
+
+    
+    
+
