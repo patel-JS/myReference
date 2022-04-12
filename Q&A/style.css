@@ -1,0 +1,36 @@
+h1{
+    color: lightcoral;
+    background-image: url(image.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    text-indent: 10px;
+    
+}
+
+.main{
+    height: 250px;
+    width: 25rem;
+    clear: both;
+}
+.one{
+    height: 10rem;
+    width: 10rem;
+    background-color: aqua;
+    float: left;
+}
+
+
+.two{
+    height: 10rem;
+    width: 10rem;
+    background-color: lightcoral;
+    float: right;
+}
+
+.three{
+    height: 10rem;
+    width: 10rem;
+    background-color: black;
+    /* float: right; */
+    position: relative;
+}
