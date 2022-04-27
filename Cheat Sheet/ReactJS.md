@@ -35,3 +35,19 @@
 >method-2  
 
     npm install node-sass --save
+
+---
+
+# React 18.0
+
+>index.js  
+
+    import * as ReactDOMClient from 'react-dom/client';
+
+    const container = document.getElementById('root');
+    root.render(<App />);
+
+
+
+
+
