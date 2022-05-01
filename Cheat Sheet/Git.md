@@ -173,6 +173,10 @@ or
     git commit -m "initial commit
     git push origin master
 
+### TO FORCE PUSH repository on github
+
+    git push -f origin master
+
 ### TO PUSH repository on github
 
     git push -u origin master
