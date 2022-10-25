@@ -10,7 +10,7 @@
        <Router>
             <Navbar />
                 <Routes>
-                    <Route exact path='/home' element={ <Home /> } ></Route>
+                    <Route exact path='/' element={ <Home /> } ></Route>
                     <Route path='/about' element={ <About /> } ></Route>
                     <Route path='/contact' element={ <Contacts /> } ></Route>
                     <Route path='/service' element={ <Service /> } ></Route>
@@ -25,6 +25,9 @@
 
     import { Link } from 'react-router-dom'
 
-    <li className='app__navbar-list app__flex' key={index}>
-        <Link to={`${menu}`}>{menu}</Link>
-    </li>
+     <div className="app__navbar--links">
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="/contact">Contact</Link>
+        <Link to="/shop">Shop</Link>
+     </div>
